@@ -10,4 +10,5 @@ class Pokemon(admin.ModelAdmin):
 
 @admin.register(PokemonEntity)
 class PokemonEntity(admin.ModelAdmin):
-    list_display = ('lat', 'lon')
+    fields = ('pokemon', 'lat', 'lon')
+    list_display = ('pokemon', 'lat', 'lon')
