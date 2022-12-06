@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -24,8 +23,8 @@
         <div class="img-thumbnail col-6 col-sm-4 col-md-3 clearfix p-2 m-2">
           <a href="{% url 'pokemon' pokemon.id %}">
             <div class="d-flex justify-content-center">
-              <img class="pull-left mr-2 float-left" src="media/{{ pokemon.image }}" style="height:50px; width:50px">
-              <p class="align-middle m-0" style="line-height:50px; font-size: 20px;">{{pokemon.title}}</p>
+              <img class="pull-left mr-2 float-left" src="{{ pokemon.image }}" style="height:50px; width:50px">
+              <p class="align-middle m-0" style="line-height:50px; font-size: 20px;">{{pokemon.title_ru}}</p>
             </div>
           </a>
         </div>
