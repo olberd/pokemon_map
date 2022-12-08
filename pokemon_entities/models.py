@@ -24,6 +24,6 @@ class PokemonEntity(models.Model):
     strength = models.IntegerField(verbose_name='Сила', blank=True, null=True)
     defense = models.IntegerField(verbose_name='Защита', blank=True, null=True)
     stamina = models.IntegerField(verbose_name='Выносливость', blank=True, null=True)
-    pokemon = models.ForeignKey('Pokemon', on_delete=models.CASCADE)
+    pokemon = models.ForeignKey('Pokemon', related_name='entities', on_delete=models.CASCADE)
 
 
